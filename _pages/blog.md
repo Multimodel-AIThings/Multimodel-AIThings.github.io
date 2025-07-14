@@ -19,7 +19,7 @@ pagination:
 <div class="post">
 
   <div class="header-bar">
-    <h1>Blog @ </h1>
+    <h1>{{ page.title }}</h1>
     <h2>Research, Code & Life in our Innovation Lab</h2>
   </div>
 
