@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Blog – Research, Code & Life @ AiThings
+title: Blog @ AiThings RG
 nav: true
 nav_order: 1
 pagination:
@@ -16,21 +16,14 @@ pagination:
     after: 3
 ---
 
----
-layout: default
-title: Blog @ AiThings RG
-permalink: /blog/
-nav: true
----
-
 <div class="post">
 
-<div class="header-bar">
-  <h1>Blog @ AiThings RG</h1>
-  <h2>Sharing our research, code, experiments, and life in the lab</h2>
-</div>
+  <div class="header-bar">
+    <h1>Blog @ AiThings RG</h1>
+    <h2>Research, Code & Life in our Innovation Lab</h2>
+  </div>
 
-{% if site.display_tags or site.display_categories %}
+  {% if site.display_tags or site.display_categories %}
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
@@ -50,74 +43,47 @@ nav: true
       {% endfor %}
     </ul>
   </div>
-{% endif %}
+  {% endif %}
 
-{% assign featured_posts = site.posts | where: "featured", "true" %}
-{% if featured_posts.size > 0 %}
-<br>
-<div class="container featured-posts">
-  {% assign is_even = featured_posts.size | modulo: 2 %}
-  <div class="row row-cols-{% if featured_posts.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
-    {% for post in featured_posts %}
-    <div class="col mb-4">
-      <a href="{{ post.url | relative_url }}">
-        <div class="card hoverable">
-          <div class="row g-0">
-            <div class="col-md-12">
-              <div class="card-body">
-                <div class="float-right"><i class="fa-solid fa-thumbtack fa-xs"></i></div>
-                <h3 class="card-title">{{ post.title }}</h3>
-                <p class="card-text">{{ post.description }}</p>
-                {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-                <p class="post-meta">{{ read_time }} min read · <i class="fa-solid fa-calendar fa-sm"></i> {{ post.date | date: "%Y" }}</p>
-              </div>
-            </div>
+  <div class="posts">
+    {% assign postlist = page.pagination.enabled and paginator.posts or site.posts %}
+    {% for post in postlist %}
+    {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
+    <div class="post-item">
+      <h3 class="post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h3>
+      
+      <p class="post-description">{{ post.description }}</p>
+      
+      <div class="post-meta">
+        <span>{{ read_time }} min read</span>
+        <span>&bull;</span>
+        <span>{{ post.date | date: '%B %d, %Y' }}</span>
+        
+        {% if post.tags.size > 0 or post.categories.size > 0 %}
+          <span>&bull;</span>
+          <div class="post-tags">
+            {% for tag in post.tags %}
+              <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}" class="tag">#{{ tag }}</a>
+            {% endfor %}
+            {% for category in post.categories %}
+              <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}" class="category">{{ category }}</a>
+            {% endfor %}
           </div>
-        </div>
-      </a>
+        {% endif %}
+      </div>
     </div>
+    <hr class="post-divider">
     {% endfor %}
   </div>
-</div>
-<hr>
-{% endif %}
 
-<ul class="post-list">
-  {% assign postlist = page.pagination.enabled and paginator.posts or site.posts %}
-  {% for post in postlist %}
-  {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-  <li>
-    <h3>
-      <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </h3>
-    <p>{{ post.description }}</p>
-    <p class="post-meta">
-      {{ read_time }} min read · {{ post.date | date: '%B %d, %Y' }}
-    </p>
-    <p class="post-tags">
-      {% assign year = post.date | date: "%Y" %}
-      <a href="{{ year | prepend: '/blog/' | relative_url }}"><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</a>
-      {% if post.tags.size > 0 %}
-        ·
-        {% for tag in post.tags %}
-          <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}"><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
-        {% endfor %}
-      {% endif %}
-      {% if post.categories.size > 0 %}
-        ·
-        {% for category in post.categories %}
-          <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}"><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
-        {% endfor %}
-      {% endif %}
-    </p>
-  </li>
-  {% endfor %}
-</ul>
-
-{% if page.pagination.enabled %}
-  {% include pagination.liquid %}
-{% endif %}
+  {% if page.pagination.enabled %}
+    {% include pagination.liquid %}
+  {% endif %}
 
 </div>
+
+<footer class="footer">
+  <p>© Copyright 2020-2025. AiThings RG AI Innovation Lab. Presented by Jujuj with Studio theme. Hosted by Hotelling Digital Paper. Privacy from Jungleth.</p>
+</footer>
