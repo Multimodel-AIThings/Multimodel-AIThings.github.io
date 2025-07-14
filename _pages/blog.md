@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Blog
+title: blog
 nav: true
 nav_order: 1
 pagination:
@@ -12,15 +12,15 @@ pagination:
   sort_field: date
   sort_reverse: true
   trail:
-    before: 1
-    after: 3
+    before: 1 # The number of links before the current page
+    after: 3 # The number of links after the current page
 ---
 
 <div class="post">
 
   <div class="header-bar">
-    <h1>Blog</h1>
-    <h2>Sharing our research, code, experiments, and life in the lab</h2>
+    <h1>Blog @ AiThings RG</h1>
+    <h2>Research, Code & Life in our Innovation Lab</h2>
   </div>
 
   {% if site.display_tags or site.display_categories %}
