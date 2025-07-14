@@ -16,6 +16,13 @@ pagination:
     after: 3
 ---
 
+---
+layout: default
+title: Blog @ AiThings RG
+permalink: /blog/
+nav: true
+---
+
 <div class="post">
 
 <div class="header-bar">
