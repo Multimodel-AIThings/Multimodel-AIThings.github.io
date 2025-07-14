@@ -440,8 +440,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-google-introduces-ads-into-ai-products-sparkles-smile",
-          title: 'Google introduces ads into AI products! :sparkles: :smile:',
+            },},{id: "news-google-launches-its-veo-3-ai-video-generator-in-vietnam-sparkles-smile",
+          title: 'Google launches its Veo 3 AI video generator in Vietnam :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-google-introduces-ads-into-ai-products-sparkles-smile",
           title: 'Google introduces ads into AI products! :sparkles: :smile:',
