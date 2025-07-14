@@ -440,12 +440,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
             },},{id: "news-google-introduces-ads-into-ai-products-sparkles-smile",
+          title: 'Google introduces ads into AI products! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-google-introduces-ads-into-ai-products-sparkles-smile",
           title: 'Google introduces ads into AI products! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-aithings-are-seeking-new-members",
