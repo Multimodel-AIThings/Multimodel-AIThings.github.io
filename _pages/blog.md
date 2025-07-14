@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /blog/
-title: Blog @ AiThings RG
+title: Blog
 nav: true
 nav_order: 1
 pagination:
