@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Google introduces ads into AI products! :sparkles: :smile:
+Google introduces ads into AI products! 
