@@ -19,7 +19,8 @@ pagination:
 <div class="post">
 
   <div class="header-bar">
-    <h1>Blog </h1>
+    <h1>Blog</h1>
+    <h2>Sharing our research, code, experiments, and life in the lab</h2>
   </div>
 
   {% if site.display_tags or site.display_categories %}
