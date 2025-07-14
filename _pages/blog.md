@@ -20,7 +20,6 @@ pagination:
 
   <div class="header-bar">
     <h1>Blog </h1>
-    <h2>Research, Code & Life in our Innovation Lab</h2>
   </div>
 
   {% if site.display_tags or site.display_categories %}
