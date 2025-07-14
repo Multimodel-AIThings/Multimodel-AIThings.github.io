@@ -445,8 +445,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-google-introduces-ads-into-ai-products-sparkles-smile",
+          title: 'Google introduces ads into AI products! :sparkles: :smile:',
           description: "",
           section: "News",},{id: "news-aithings-are-seeking-new-members",
           title: 'AiThings are Seeking new members',
