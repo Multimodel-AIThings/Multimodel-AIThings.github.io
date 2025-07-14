@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Google launches its Veo 3 AI video generator in Vietnam :sparkles: :smile:
+Google launches its Veo 3 AI video generator in Vietnam 
