@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-AiThings are Seeking new members 
+AiThings are Seeking new members

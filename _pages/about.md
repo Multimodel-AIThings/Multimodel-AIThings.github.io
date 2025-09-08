@@ -40,8 +40,6 @@ We are a passionate and dynamic team committed to pushing the boundaries of **ap
 - We aim to **bridge science and engineering**, contributing to both academic and societal impact.
 - We are committed to **leadership** — and to growing as leaders.
 
-
-
 ### 🔬 **Research Culture**
 
 - We **value freedom** of ideas and thought.

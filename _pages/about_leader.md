@@ -1,6 +1,3 @@
-
-
-
 <div style="font-size: 1.2em;">
   <strong>Name: Dr. Nguyen Nam Phong</strong> <br>
   Role: Lab Supervisor <br>
