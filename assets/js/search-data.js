@@ -398,7 +398,7 @@ ninja.data = [{
           title: '[News] Two Papers Accepted at IEEE ICCE 2026 🚀 🌧️ Rainfall Forecasting: MP-MoE:...',
           description: "",
           section: "News",},{id: "news-news-double-success-for-duy-anh-it2-k67-at-viettel-amp-amp-vinuni-programs-iot-internship-admitted-to-the-prestigious-viettel-digital-talent-2026-program-specializing-in-the-iot-domain-ai-in-action-selected-for-the-elite-practical-ai-talent-training-program-batch-2-jointly-organized-by-vinuni-and-vingroup-we-are-actively-recruiting-new-members-k68-k69-k70-view-details-amp-amp-apply",
-          title: '**[News] Double Success for Duy Anh (IT2-K67) at Viettel &amp;amp;amp; VinUni Programs 🌟...',
+          title: '[News] Double Success for Duy Anh (IT2-K67) at Viettel &amp;amp;amp; VinUni Programs 🌟...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
