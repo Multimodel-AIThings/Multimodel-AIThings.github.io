@@ -1,7 +1,5 @@
 <div style="font-size: 1.2em;">
     <strong>Name: Tran Trung Dung</strong><br>
     Role: Mentor<br>
-    Affiliation:<br>
-    Research Assistant, Center for Environmental Intelligence (CEI), VinUniversity.<br>
-    Teaching Assistant, College of Engineering and Computer Science (CECS), VinUniversity.
+    Affiliation: Master's student, Department of Robotics, Hanyang University ERICA, Korea.
 </div>
